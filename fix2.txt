@@ -1,0 +1,40 @@
+1. git init LabbGitJ
+2. skapa README.md manuellt 
+3. git add README.md
+   git commit"Initial commit"
+4. git branch feature1
+   git switch feature1
+5. ändra i README.md manuellt
+   git add README.md
+   git commit " Add dog and replace moose with mouse"
+6. git switch main
+   ändra i README.md file
+   git add README.md
+   git commit "Change moose to mahmut"
+7. git merge feature 1 (solve conflicts)
+8. git tag extinct
+9. git reset --hard HEAD~1
+10. ändra manuellt i README.md
+    git add README.md
+    git commit "Fix uppercase"
+11. git branch feature2
+12. git switch feature2
+    skapa manuellt fix1.txt 
+    git add fix1.txt
+    git commit"Add fix1"
+    skapa manuellt fix2.txt
+    git add fix2.txt
+    git commit " Add fix2"
+13. git switch main
+14. git switch feature2
+    git log --graph --oneline --all 
+    git switch main
+    git cherry-pick  b4f39c4 
+15. skriv i fix2 filen git commando 
+16. skapa github repository
+    git remote add origin https://github.com/Lucia560/labbGitJ.git
+    git push -u origin main
+    uppdatera fix2.txt med git commands manuellt 
+    git add fix2.txt
+    git commit "Add all git commands to fix2.txt"
+    git push
