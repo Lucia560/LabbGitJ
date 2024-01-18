@@ -38,3 +38,17 @@
     git add fix2.txt
     git commit "Add all git commands to fix2.txt"
     git push
+18. git tag -a v1.0 -m "Version 1.0"
+    git push origin v1.0
+19. git rebase -i HEAD~2
+20. git branch feature3
+    git switch feature3
+    uppdatera manuellt fix2.txt
+    git add fix2.txt
+    git commit "Add git commands for task 18 and 19"
+    git switch main
+    git merge feature3 --no-ff -m "Merge feature3 into main"
+    git revert -m 1 HEAD
+    git switch feature3
+    git add fix2.txt
+    git commit --amend --no-edit
